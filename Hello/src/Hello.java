@@ -129,20 +129,17 @@ public class Hello {
 		}
 		
 		
-		System.out.println("******************** 별짓기 pr11 ********************");
-		for(int ind = 0; ind<10; ind+=2) {
-//			System.out.println("");
-			for(int ins = 0; ins <= ind; ins++) {
-				System.out.print("ㅁ");
+		System.out.println("******************** 별짓기 오른쪽 pr11 ********************");
+		for(int u=1;u<=10;u++) {
+			for(int v=1; v<u/2; v++) {
+				System.out.print(" ");
 			}
-			System.out.println("ㅁ");
+			for(int z=1;z<=u;z+=2) {
+				System.out.print("*");
+			}
+			System.out.println(" ");
 		}
 
-		
-		
-		
-		
-		
 	}
 
 }
