@@ -89,8 +89,7 @@ public class Hello {
 //		}
 		
 		
-		
-		
+	
 		System.out.println("******************** pr07 ********************");
 		byte b = 1;
 		short sh = 2;
