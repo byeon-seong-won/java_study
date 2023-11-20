@@ -30,9 +30,8 @@ public class crawling {
 		double K15_max = Double.MIN_VALUE;													 //변수를 최소값으로 지정
 		String K15_short_dist = null;														 //가장 가까운 곳의 변수 초기화
 		String K15_long_dist = null;														 //가장 먼 곳의 변수 초기화
-		
-		ㄴㅇㄹㄴㅇㄹ
-		
+
+
 		int K15_LineCnt = 0;																 //반복하는 횟수 0으로 초기화								 		
 		while((K15_readtxt = K15_br.readLine()) != null) {									 //내용이 null이 아니면 계속 반복
 			String [] K15_field = K15_readtxt.split("\t");									 //K15_readtxt를 tab으로 나눠 배열에		

@@ -1,6 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<%@ page import = "crawling.crawling" %>
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<%@ page import="crawlingData.Data" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -11,10 +10,16 @@
 
 
 
- <h1>Hello</h1>
- 
- 
+<h1>시작!</h1>
 
- 
+
+<%
+	Data aa = new Data();
+	String dis = aa.crawl();
+	out.println(dis);
+%>
+
+
+
 </body>
 </html>

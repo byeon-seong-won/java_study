@@ -1,14 +1,14 @@
 
-package crawling;
+package crawlingData;
 
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class crawling {
+public class Data {
 
-	public static void main(String[] args) throws IOException {
+	public static String crawl() throws IOException {
 		File K15_f = new File("C:\\Users\\변성원\\Desktop\\한국교통안전공단_전국공영주차장정보_20191224.txt");   
 		//파일 사용하기 위해 저장 위치 설정
 		BufferedReader K15_br = new BufferedReader (new FileReader(K15_f));		
@@ -17,13 +17,12 @@ public class crawling {
 		//문장형 변수 선언
 		if ((K15_readtxt = K15_br.readLine()) == null) {									//내용이 null이면
 			System.out.printf("빈파일입니다");										   	  		//빈파일입니다 출력 후 return				
-			return;											
+			return "빈파일";											
 		}	
 		String [] K15_field_name = K15_readtxt.split("\t");				
 		
 		
-		//첫번째줄의 항목을 출력하기 위해 한줄 먼저 읽음
-			
+		
 		double K15_lat = 37.3860521;           												 //분당 융기원의 위도
 		double K15_lng = 127.1214038;														 //분당 융기원의 경도
 		double K15_min = Double.MAX_VALUE;													 //변수를 최대값으로 지정
@@ -33,6 +32,8 @@ public class crawling {
 		
 		
 		
+		//첫번째줄의 항목을 출력하기 위해 한줄 먼저 읽음
+
 		int K15_LineCnt = 0;																 //반복하는 횟수 0으로 초기화								 		
 		while((K15_readtxt = K15_br.readLine()) != null) {									 //내용이 null이 아니면 계속 반복
 			String [] K15_field = K15_readtxt.split("\t");									 //K15_readtxt를 tab으로 나눠 배열에		
@@ -67,11 +68,32 @@ public class crawling {
 			}		
 			}
 		}
-			System.out.printf("가장 가까운 곳 : %s", K15_short_dist);								//가장 가까운 곳 출력
-			System.out.printf(", 거리차이 : %f\n", K15_min);										//해당 장소와의 거리 차이 출력  
-			System.out.printf("가장 먼 곳 : %s", K15_long_dist);									//가장 먼 곳 출력
-			System.out.printf(", 거리차이 : %f\n", K15_max);										//해당 장소와의 거리 차이 출력  
-								
+//			System.out.printf("가장 가까운 곳 : %s", K15_short_dist);								
+			//가장 가까운 곳 출력
+//			System.out.printf(", 거리차이 : %f\n", K15_min);										
+			//해당 장소와의 거리 차이 출력  
+//			System.out.printf("가장 먼 곳 : %s", K15_long_dist);									
+			//가장 먼 곳 출력
+//			System.out.printf(", 거리차이 : %f\n", K15_max);										
+			//해당 장소와의 거리 차이 출력  
+
 		K15_br.close();																			//다읽었으면 BufferedReader 닫음
+		return K15_short_dist;
 	}
+	
+	
+	
+//		public String getshortAddr() {
+//			return K15_short_dist;
+//		}
+//	
+//		public String getlongAddr() {
+//			return K15_short_dist;
+//		}
+//	
+
+	
+	
+	
+	
 }
