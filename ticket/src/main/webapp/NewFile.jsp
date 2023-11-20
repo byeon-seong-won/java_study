@@ -4,12 +4,22 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>jsp</title>
 </head>
 <body>
-	<h1>
-		
+
+	<%
+		int total = 0;
+		for(int i = 0; i <=10; i++) {
+			total = total + i;
+		}
+	%>
 	
-	</h1>
+	<%=total %>
+	<h1>jsp!</h1>
+	
+	
+	
+	
 </body>
 </html>
