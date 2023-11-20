@@ -81,16 +81,6 @@ public class Data {
 		return K15_short_dist;
 	}
 	
-	
-	
-//		public String getshortAddr() {
-//			return K15_short_dist;
-//		}
-//	
-//		public String getlongAddr() {
-//			return K15_short_dist;
-//		}
-//	
 
 	
 	
