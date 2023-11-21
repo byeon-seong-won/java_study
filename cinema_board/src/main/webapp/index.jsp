@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
-<%@ page import="parkData.Data" %>
+<%@ page import="parkData.Parkdata" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -16,8 +16,10 @@
 </head>
 <body>
 
-<%	
-	Data aa = new Data();
+<%
+p
+	
+	Parkdata aa = new Parkdata();
 	String dis = aa.crawl();
 %>
 
