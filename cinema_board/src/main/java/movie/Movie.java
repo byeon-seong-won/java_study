@@ -30,7 +30,7 @@ public class Movie {
 		WebDriver driver = new ChromeDriver(options);
 		
 		//이동을 원하는 url
-		String url = "https://www.naver.com";
+		String url = "https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=%EC%83%81%EC%98%81%EC%98%81%ED%99%94";
 		driver.get(url);
 		
 		try {Thread.sleep(1000);} catch (InterruptedException e) {}
